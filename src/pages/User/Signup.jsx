@@ -1,4 +1,5 @@
 import House from "../../assets/images/House.png";
+import usernavbar from "../../assets/images/UserLogo.png";
 import "../../styles/User Styles/Login.css";
 import { FcGoogle } from "react-icons/fc";
 import { Link,useNavigate } from "react-router-dom";
@@ -82,9 +83,14 @@ const Signup = () => {
     <div className="vh-100 overflow-y-hidden" style={{maxWidth: "1500px", margin: "auto"}}>
       <ToastContainer />
       <div className={isDark ? "DarkMode" : null}>
+      
         <div className="col-12 d-flex justify-content-between m-auto ">
-          <div className="col-md-6 d-flex flex-column justify-content-center container p-lg-5">
-            <h2 className="fs-4 mt-3">
+          <div className="col-md-6 d-flex flex-column justify-content-center container">
+          <Link to="/">
+            <img src={usernavbar} alt="usernavlogo" className="usernavlogo" />
+          </Link>
+           <div className="text-center p-lg-5">
+           <h2 className="fs-4 mt-3">
               Join our community of home seekers and explore the possibilities
               that await.
             </h2>
@@ -216,6 +222,7 @@ const Signup = () => {
                 </Link>
               </p>
             </form>
+           </div>
           </div>
 
           <div className="col-md-6 d-lg-block d-none">

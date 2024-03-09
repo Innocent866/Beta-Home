@@ -1,4 +1,5 @@
 // import House from "../../assets/images/House.png";
+import usernavbar from "../../assets/images/UserLogo.png";
 import "../../styles/User Styles/Login.css";
 import { FcGoogle } from "react-icons/fc";
 import House from "../../assets/images/House.png";
@@ -54,6 +55,10 @@ const Login = () => {
         <ToastContainer />
         <div className="col-md-6 d-flex justify-content-center align-items-center">
           <div className="input-field p-3 p-md-5 col-12">
+          <Link to="/">
+            <img src={usernavbar} alt="usernavlogo" className="usernavlogo" />
+          </Link>
+            <div className="p-3 p-md-5">
             <div className="header lh-1 mb-4 text-center text-md-start">
               <p className="text fw-bold fs-4">Welcome Back to Betahouse</p>
               <p>Enter your details to access your account</p>
@@ -124,6 +129,7 @@ const Login = () => {
                 Sign up
               </Link>
             </p>
+            </div>
           </div>
         </div>
         <img
