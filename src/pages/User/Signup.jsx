@@ -89,13 +89,13 @@ const Signup = () => {
           <Link to="/">
             <img src={usernavbar} alt="usernavlogo" className="usernavlogo" />
           </Link>
-           <div className="text-center p-lg-5">
-           <h2 className="fs-4 mt-3">
+           <div className=" px-lg-5 py-lg-5">
+           <h2 className="text-center fs-4 mt-3">
               Join our community of home seekers and explore the possibilities
               that await.
             </h2>
 
-            <p className="text-secondary ">
+            <p className="text-center text-secondary ">
               Lets get started by filling out the information below
             </p>
 
